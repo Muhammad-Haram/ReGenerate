@@ -73,6 +73,7 @@
     font-weight: bold;
     font-family: "Urbanist", sans-serif;
     text-transform: capitalize;
+    max-width: 550px;
 }
 
 .hero .hero-text span {
@@ -223,6 +224,27 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+}
+
+.services .blue-Sidecircle {
+    background-color: #015DB2;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.services .lightBlue-Sidecircle {
+    background-color: #0291F7;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
 }
 
 .services .ser-container {
@@ -233,11 +255,11 @@
     flex-direction: column;
     background: rgba(255, 255, 255, .1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
-    border-radius: 50px;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-right: 2px solid rgba(255, 255, 255, .2);
-    border-bottom: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 0.5px solid #015DB2;
+    backdrop-filter: blur(20px);
+    padding: 80px 20px;
+    margin: 80px 0;
 }
 
 .services .ser-text {
@@ -250,6 +272,7 @@
 .services .ser-text h1 {
     font-size: 50px;
     font-family: "Urbanist", sans-serif;
+    margin-bottom: 10px;
 }
 
 .services .ser-text p {
@@ -257,17 +280,86 @@
     font-family: "Manrope", sans-serif;
     max-width: 250px;
     text-align: center;
+    margin-bottom: 40px;
     max-width: 470px;
 }
 
 .ser-container .ser-detail {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.ser-container .ser-detail .ser-acc {}
+.ser-container .ser-detail .ser-image {
+    width: 50%;
+}
 
+.ser-container .ser-detail .ser-image img {
+    width: 100%;
+}
+
+.ser-container .ser-detail .ser-acc {
+    width: 50%;
+}
+
+.ser-container .ser-detail .ser-acc .ser-box {
+    display: flex;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.ser-container .ser-detail .ser-acc .ser-box::before {
+    content: "";
+    background-image: url("icons/arrow-4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    filter: drop-shadow(4px 20px 20px #aed7f4);
+    display: none;
+    transition: all 0.2s;
+}
+
+.ser-container .ser-detail .ser-acc .ser-box:hover::before {
+    right: -15px;
+    display: block;
+    transition: all 0.2s;
+}
+
+.ser-container .ser-detail .ser-acc .ser-box:hover {
+    filter: drop-shadow(6px 2px 9px #e6e6e6);
+    background-color: #fff;
+}
+
+.ser-container .ser-detail .ser-acc .ser-box p {
+    max-width: 380px;
+    color: #6D6D6D;
+    margin-top: 10px;
+}
+
+.ser-container .ser-detail .ser-acc button {
+    background-color: #015DB2;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+    padding: 15px 30px;
+    border: 0;
+}
+
+.ser-container .ser-detail .ser-acc .ser-box .ser-box-logo {
+    margin-right: 15px;
+}
 
 /* "lets create a project" section  */
 
@@ -276,6 +368,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 10 0px 0;
 }
 
 .pr-text {
