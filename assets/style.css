@@ -371,6 +371,7 @@
     background-color: #0291F7;
     padding: 80px 60px;
     padding-bottom: 150px;
+    margin: 80px 0px;
 }
 
 .aboutUs .aboutUs-images {
@@ -537,4 +538,66 @@ footer .fo-right .social-icon {
     justify-content: center;
     gap: 40px;
     margin-top: 60px;
+}
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+    body {
+        background-color: aqua;
+    }
+
+    .home {
+        padding: 0px 50px;
+    }
+
+    .hero {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 50px;
+    }
+
+    .hero .hero-text {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+
+    .pr-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pr-circle-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 479px) {
+    body {
+        background-color: rgb(0, 0, 0);
+    }
 }
