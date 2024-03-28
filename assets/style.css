@@ -355,11 +355,60 @@
     font-family: "Manrope", sans-serif;
     padding: 15px 30px;
     border: 0;
+    cursor: pointer;
 }
 
 .ser-container .ser-detail .ser-acc .ser-box .ser-box-logo {
     margin-right: 15px;
 }
+
+/* about us section css */
+.aboutUs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0291F7;
+    padding: 80px 60px;
+    padding-bottom: 150px;
+}
+
+.aboutUs .aboutUs-images {
+    width: 50%;
+    position: relative;
+}
+
+.aboutUs .aboutUs-images .aboutus-img1 {
+    position: relative;
+}
+
+.aboutUs .aboutUs-images .aboutus-img2 {
+    position: absolute;
+    bottom: -170px;
+    left: 250px;
+}
+
+.aboutUs .aboutUs-text {
+    width: 50%;
+    margin-left: 80px;
+}
+
+.aboutUs .aboutUs-text h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+    margin-bottom: 30px;
+}
+
+.aboutUs .aboutUs-text p {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    max-width: 490px;
+    text-align: justify;
+    line-height: 2;
+}
+
+/* about us section css complete */
 
 /* "lets create a project" section  */
 
@@ -367,11 +416,11 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 10 0px 0;
+    margin: 100px 0px;
 }
 
 .pr-text {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -390,6 +439,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    width: auto;
 }
 
 .pr-circle-sec .pr-blue-sec {
@@ -404,7 +455,7 @@
     width: 250px;
     height: 250px;
     position: absolute;
-    right: 90px;
+    right: -195px;
 }
 
 .pr-circle-sec .pr-stroke-sec .circle-text {
@@ -415,18 +466,20 @@
     animation-timing-function: linear;
     border: 2px solid black;
     border-radius: 50%;
+    position: relative;
 }
 
 .pr-circle-sec .pr-stroke-sec .arrow {
     position: absolute;
-    left: 27%;
-    top: 27%;
     background-color: #015DB2;
     padding: 35px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @keyframes rotate {
