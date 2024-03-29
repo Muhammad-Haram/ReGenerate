@@ -480,7 +480,7 @@
 .aboutUs .aboutUs-images .aboutus-img2 {
     position: absolute;
     bottom: -170px;
-    right: -100px;
+    left: 260px;
 }
 
 .aboutUs .aboutUs-text {
@@ -781,6 +781,11 @@ footer .fo-right .social-icon {
         width: 100%;
     }
 
+    .aboutUs .aboutUs-images .aboutus-img2 {
+        /* right: -200px; */
+        left: 280px;
+    }
+
     .aboutUs .aboutUs-text {
         width: 90%;
         margin-left: 0px;
@@ -798,6 +803,10 @@ footer .fo-right .social-icon {
     }
 
     /* latest project section  */
+
+    .aboutUs .aboutUs-images .aboutus-img2 {
+        left: 240px;
+    }
 
     .latest-projects {
         width: 100%;
@@ -1054,7 +1063,7 @@ footer .fo-right .social-icon {
         margin-bottom: 0px;
     }
 
-    /* aboutUs section  */
+    /* aboutUs section */
 
     .aboutUs {
         justify-content: center;
@@ -1072,7 +1081,7 @@ footer .fo-right .social-icon {
     .aboutUs .aboutUs-images .aboutus-img2 {
         width: 50%;
         bottom: -100px;
-        right: -15px;
+        left: 180px;
     }
 
     .aboutUs .aboutUs-text h1 {
