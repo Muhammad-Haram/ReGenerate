@@ -1,3 +1,22 @@
+// navbar js 
+let menu = document.querySelector("#nav-menu");
+let close = document.querySelector("#close");
+let nav = document.querySelector(".nav");
+
+if (menu) {
+    menu.addEventListener("click", () => {
+        nav.classList.add("active");
+    })
+}
+
+if (close) {
+    close.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+}
+
+// swiper js 
+
 var swiper = new Swiper(".mySwiper", {
     breakpoints: {
         640: {
@@ -22,6 +41,4 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 
-    mousewheel: true,
-    keyboard: true,
 });
