@@ -323,7 +323,7 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    right: 10px;
+    right: 0px;
     top: -20px;
     filter: drop-shadow(4px 20px 20px #aed7f4);
     display: none;
@@ -561,12 +561,51 @@ footer .fo-right .social-icon {
 
     .hero .hero-text {
         width: 100%;
-        position: relative;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .marquee {
+        background-color: #fff;
+        padding: 70px 70px;
+    }
+
+    .ser-container .ser-detail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .ser-container .ser-detail .ser-image {
+        width: 100%;
+    }
+
+    .ser-container .ser-detail .ser-acc {
+        width: 100%;
+    }
+
+    .aboutUs {
+        justify-content: center;
+        flex-direction: column;
+        padding: 80px 60px;
+        padding-bottom: 150px;
+        margin: 80px 0px;
+    }
+    
+    .aboutUs .aboutUs-images {
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .aboutUs .aboutUs-text {
+        width: 100%;
+        margin-left: 0px;
     }
 
     .project {
