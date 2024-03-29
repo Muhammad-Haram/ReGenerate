@@ -16,7 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/df3dd40646.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="assets/script.js" defer></script>
 </head>
 
@@ -27,7 +30,10 @@
 
         <div class="header">
             <img src="assets/icons/logo.png" alt="">
-            <ul>
+            <div class="mbl">
+                <i id="nav-menu" class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav">
                 <li>Home</li>
                 <li>Services</li>
                 <li>Contact us</li>
@@ -56,7 +62,7 @@
         </div>
 
     </section>
-    <!-- home section complete  -->
+    <!-- home section end  -->
 
     <!-- marquee section -->
     <section class="marquee">
@@ -85,7 +91,7 @@
             </div>
         </div>
     </section>
-    <!-- marquee complete -->
+    <!-- marquee end -->
 
     <!-- services section -->
     <section class="services">
@@ -144,7 +150,60 @@
             </div>
         </div>
     </section>
-    <!-- services section complete  -->
+    <!-- services section end  -->
+
+    <!-- latest project section -->
+    <section class="latest-projects">
+        <div class="latest-projects-cards">
+
+            <div class="latest-pr-card pr-1">
+                <h1>Our Latest Project</h1>
+                <hr>
+                <div class="pr-card-detail">
+                    <div class="pr-card-txt">
+                        <h2>Marketing Dashboard</h2>
+                        <p>Lorem, ipsum dolor</p>
+                    </div>
+                    <div class="pr-card-arrow">
+                        <img src="assets/icons/arrow-5.png" alt="">
+                    </div>
+                </div>
+
+                <img class="pr-card-img" src="assets/imgs/pr-1.png" alt="">
+            </div>
+
+            <div class="latest-pr-card pr-2">
+                <hr>
+                <div class="pr-card-detail">
+                    <div class="pr-card-txt">
+                        <h2>Marketing Dashboard</h2>
+                        <p>Lorem, ipsum dolor</p>
+                    </div>
+                    <div class="pr-card-arrow">
+                        <img src="assets/icons/arrow-5.png" alt="">
+                    </div>
+                </div>
+                <img class="pr-card-img" src="assets/imgs/pr-2.png" alt="">
+            </div>
+
+            <div class="latest-pr-card pr-3">
+                <hr>
+                <div class="pr-card-detail">
+                    <div class="pr-card-txt">
+                        <h2>Marketing Dashboard</h2>
+                        <p>Lorem, ipsum dolor</p>
+                    </div>
+                    <div class="pr-card-arrow">
+                        <img src="assets/icons/arrow-5.png" alt="">
+                    </div>
+                </div>
+                <img class="pr-card-img" src="assets/imgs/pr-3.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <!-- latest project section end -->
+
 
     <!-- About us section -->
     <section class="aboutUs">
@@ -161,7 +220,187 @@
                 sagittis velit. Volutpat enim metus vitae facilisis.</p>
         </div>
     </section>
-    <!-- About us section complete-->
+    <!-- About us section end-->
+
+    <!-- carousel section  -->
+    <section class="carousel">
+
+        <div class="carousel-heading">
+            <h1>Don't take our word for it.</h1>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- <div class="swiper-slide swiper-slide-prev" style="width: 100px; height: 100px;"></div> -->
+                <!-- <div class="swiper-slide swiper-slide-active" style="width:700px; height:300px;"></div> -->
+                <!-- <div class="swiper-slide swiper-slide-next" style="width: 100px; height: 100px;"></div> -->
+
+                <div class="swiper-slide" style="width: 40%; height:300px;">
+                    <div class="profile">
+
+                        <div class="profile-detail">
+                            <img src="assets/imgs/profile-3.png" alt="" style="width: 70px; height: 70px;">
+                            <div class="profile-text">
+                                <h4>Martin Jones</h4>
+                                <p>Trusty of Vyom-Baroda</p>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <img src="assets/icons/star.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet. Non numquam amet qui asperiores expedita aut dolorum porro sed
+                            ipsum
+                            maiores ad ducimus nihil ut natus possimus in dolores quisquam Non numquam amet qui
+                            asperiores
+                            expedita aut dolorum porro sed ipsum
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 40%; height:300px;">
+                    <div class="profile">
+
+                        <div class="profile-detail">
+                            <img src="assets/imgs/profile-1.png" alt="">
+                            <div class="profile-text">
+                                <h4>Martin Jones</h4>
+                                <p>Trusty of Vyom-Baroda</p>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <img src="assets/icons/star.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet. Non numquam amet qui asperiores expedita aut dolorum porro sed
+                            ipsum
+                            maiores ad ducimus nihil ut natus possimus in dolores quisquam Non numquam amet qui
+                            asperiores
+                            expedita aut dolorum porro sed ipsum
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 40%; height:300px;">
+                    <div class="profile">
+
+                        <div class="profile-detail">
+                            <img src="assets/imgs/profile-2.png" alt="">
+                            <div class="profile-text">
+                                <h4>Martin Jones</h4>
+                                <p>Trusty of Vyom-Baroda</p>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <img src="assets/icons/star.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet. Non numquam amet qui asperiores expedita aut dolorum porro sed
+                            ipsum
+                            maiores ad ducimus nihil ut natus possimus in dolores quisquam Non numquam amet qui
+                            asperiores
+                            expedita aut dolorum porro sed ipsum
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 40%; height:300px;">
+                    <div class="profile">
+
+                        <div class="profile-detail">
+                            <img src="assets/imgs/profile-3.png" alt="">
+                            <div class="profile-text">
+                                <h4>Martin Jones</h4>
+                                <p>Trusty of Vyom-Baroda</p>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <img src="assets/icons/star.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet. Non numquam amet qui asperiores expedita aut dolorum porro sed
+                            ipsum
+                            maiores ad ducimus nihil ut natus possimus in dolores quisquam Non numquam amet qui
+                            asperiores
+                            expedita aut dolorum porro sed ipsum
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 40%; height:300px;">
+                    <div class="profile">
+
+                        <div class="profile-detail">
+                            <img src="assets/imgs/profile-1.png" alt="">
+                            <div class="profile-text">
+                                <h4>Martin Jones</h4>
+                                <p>Trusty of Vyom-Baroda</p>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <img src="assets/icons/star.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet. Non numquam amet qui asperiores expedita aut dolorum porro sed
+                            ipsum
+                            maiores ad ducimus nihil ut natus possimus in dolores quisquam Non numquam amet qui
+                            asperiores
+                            expedita aut dolorum porro sed ipsum
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 40%; height:300px;">
+                    <div class="profile">
+
+                        <div class="profile-detail">
+                            <img src="assets/imgs/profile-2.png" alt="">
+                            <div class="profile-text">
+                                <h4>Martin Jones</h4>
+                                <p>Trusty of Vyom-Baroda</p>
+                            </div>
+                        </div>
+
+                        <div class="rating">
+                            <img src="assets/icons/star.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet. Non numquam amet qui asperiores expedita aut dolorum porro sed
+                            ipsum
+                            maiores ad ducimus nihil ut natus possimus in dolores quisquam Non numquam amet qui
+                            asperiores
+                            expedita aut dolorum porro sed ipsum
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- your project section  -->
     <section class="project">
@@ -177,7 +416,7 @@
             </div>
         </div>
     </section>
-    <!-- your project section complete  -->
+    <!-- your project section end  -->
 
 
     <!-- footer section -->
@@ -201,7 +440,7 @@
             </div>
         </div>
     </footer>
-    <!-- footer section complete -->
+    <!-- footer section end -->
 
 </body>
 

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red */
 }
 
 /* Home page  */
@@ -19,6 +20,15 @@
     align-items: center;
     justify-content: space-between;
     font-family: "Manrope", sans-serif;
+}
+
+.mbl {
+    display: none;
+}
+
+.mbl i {
+    font-size: 25px;
+    color: #015DB2;
 }
 
 .header img {
@@ -112,6 +122,7 @@
     border: 2px solid #015DB2;
     font-size: 14px;
     font-weight: bold;
+    font-family: "Manrope", sans-serif;
 }
 
 .hero .hero-text .hero-text-btn button:nth-child(1) {
@@ -136,7 +147,6 @@
 
 .blue-circle {
     background-color: #0291F7;
-    padding: 50px;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -362,6 +372,86 @@
     margin-right: 15px;
 }
 
+/* latest project  */
+
+.latest-projects {
+    width: 100%;
+    padding: 70px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.latest-projects-cards {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.latest-projects-cards .pr-2 {
+    margin-bottom: 40px;
+}
+
+.latest-projects-cards .pr-3 {
+    margin-bottom: 190px;
+}
+
+.latest-projects-cards .pr-card-img {
+    width: 100%;
+}
+
+.latest-projects-cards h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.latest-projects-cards .latest-pr-card {
+    width: 32%;
+}
+
+.latest-projects-cards .latest-pr-card hr {
+    background-color: gray;
+}
+
+.latest-projects-cards .latest-pr-card .pr-card-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+
+
+.pr-card-detail .pr-card-txt {}
+
+.pr-card-detail .pr-card-txt h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    max-width: 20px;
+}
+
+.pr-card-detail .pr-card-txt p {
+    color: #7A7A7A;
+}
+
+.latest-pr-card .pr-card-arrow {
+    background-color: #015DB2;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-pr-card .pr-card-arrow img {
+    width: 25%;
+}
+
+
 /* about us section css */
 .aboutUs {
     width: 100%;
@@ -386,7 +476,7 @@
 .aboutUs .aboutUs-images .aboutus-img2 {
     position: absolute;
     bottom: -170px;
-    left: 250px;
+    right: -100px;
 }
 
 .aboutUs .aboutUs-text {
@@ -405,11 +495,88 @@
     color: #fff;
     font-family: "Manrope", sans-serif;
     max-width: 490px;
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 2;
 }
 
-/* about us section css complete */
+/* about us section css end */
+
+/* carousel section  */
+
+.carousel {
+    width: 100%;
+    padding: 70px 0px;
+    background-color: #E7E7E7;
+    font-family: "Urbanist", sans-serif;
+}
+
+.carousel .carousel-heading h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    /* filter: drop-shadow(11px 16px 26px #062F7D); */
+}
+
+.swiper-slide .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.swiper-slide .profile .profile-detail {
+    display: flex;
+    align-items: end;
+    justify-content: center
+}
+
+.swiper-slide .profile .profile-detail img {
+    width: 70px;
+    height: 70px;
+}
+
+.swiper-slide .profile .profile-detail .profile-text {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.swiper-slide .profile .profile-detail .profile-text h4 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.swiper-slide .profile .profile-detail .profile-text p {
+    font-size: 16px;
+    color: #515151;
+    margin: 0;
+}
+
+.swiper-slide .profile .profile-detail .swiper-slide img {
+    width: 50px;
+    height: 50px;
+}
+
+/* carousel section end */
 
 /* "lets create a project" section  */
 
@@ -431,7 +598,7 @@
 .pr-text h1 {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
     max-width: 450px;
     line-height: 75px;
 }
@@ -540,10 +707,9 @@ footer .fo-right .social-icon {
     margin-top: 60px;
 }
 
-@media screen and (min-width: 480px) and (max-width:768px) {
-    body {
-        background-color: aqua;
-    }
+@media (max-width:1250px) {
+
+    /* hero section  */
 
     .home {
         padding: 0px 50px;
@@ -568,17 +734,22 @@ footer .fo-right .social-icon {
         flex-direction: column;
     }
 
+    .hero .hero-img .img2 {
+        left: -140px;
+    }
+
+    /* marquree section  */
+
     .marquee {
         background-color: #fff;
         padding: 70px 70px;
     }
 
+    /* services section  */
+
     .ser-container .ser-detail {
-        display: flex;
-        align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 40px;
     }
 
     .ser-container .ser-detail .ser-image {
@@ -589,54 +760,367 @@ footer .fo-right .social-icon {
         width: 100%;
     }
 
+    /* aboutUs section  */
+
     .aboutUs {
         justify-content: center;
         flex-direction: column;
-        padding: 80px 60px;
-        padding-bottom: 150px;
-        margin: 80px 0px;
+        padding-bottom: 80px;
     }
-    
+
     .aboutUs .aboutUs-images {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .aboutUs .aboutUs-images .aboutus-img1 {
         width: 100%;
-        position: relative;
-        margin-bottom: 50px;
     }
 
     .aboutUs .aboutUs-text {
-        width: 100%;
+        width: 90%;
         margin-left: 0px;
     }
 
-    .project {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 50px 0px;
-    }
-
-    .pr-text {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .pr-circle-sec {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        width: auto;
+    .aboutUs .aboutUs-text p {
+        max-width: 100%;
     }
 
 }
 
-@media (max-width: 479px) {
+@media (max-width:950px) {
     body {
-        background-color: rgb(0, 0, 0);
+        /* background-color: aqua; */
     }
+
+    /* latest project section  */
+
+    .latest-projects {
+        width: 100%;
+        padding: 50px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    .latest-projects-cards h1 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+
+    .pr-card-detail .pr-card-txt h2 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        max-width: 20px;
+    }
+
+    .pr-card-detail .pr-card-txt p {
+        font-size: 12px;
+    }
+
+    .latest-pr-card .pr-card-arrow {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* your project section  */
+    .project {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 100px 0px;
+    }
+}
+
+@media (max-width: 479px) {
+
+    body {
+        /* background-color: rgb(14, 134, 155); */
+    }
+
+
+    /* home page > header  */
+
+    .header {
+        width: 100%;
+        padding: 30px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Manrope", sans-serif;
+    }
+
+    .mbl {
+        display: block;
+    }
+
+    .header img {
+        cursor: pointer;
+    }
+
+    .header ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        width: 0px;
+        height: 100vh;
+        display: none;
+    }
+
+    .header ul li {
+        list-style-type: none;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .header button {
+        font-family: "Manrope", sans-serif;
+        background-color: #0291F7;
+        border: 0;
+        padding: 12px 30px;
+        border-radius: 50px;
+        color: #fff;
+        cursor: pointer;
+        filter: drop-shadow(10px 13px 24px #E1EAFE);
+        display: none;
+    }
+
+    .home {
+        padding: 0px 20px;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 50px 0;
+        gap: 50px;
+    }
+
+    .hero .hero-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero .hero-text span::before {
+        width: 150px;
+        left: -6px;
+        top: -29px;
+    }
+
+    .hero .hero-text .hero-text-btn button {
+        padding: 12px 20px;
+        border: 1px solid #015DB2;
+        font-size: 12px;
+    }
+
+    .hero .hero-img .img1 {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .blue-circle {
+        width: 70px;
+        height: 70px;
+        top: -30px;
+        left: -15px;
+    }
+
+    .hero .hero-img .img2 {
+        left: -25px;
+        width: 60%;
+        bottom: -40px;
+    }
+
+    .hero .hero-img .img3 {
+        top: 60px;
+        right: -10px;
+        width: 30%;
+    }
+
+    .hero .hero-img .img4 {
+        bottom: -10px;
+        width: 15%;
+        right: 0;
+    }
+
+    /* marquree section  */
+
+    .marquee {
+        background-color: #fff;
+        padding: 30px 10px;
+    }
+
+    /* services section  */
+
+    .services .blue-Sidecircle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .services .lightBlue-Sidecircle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .services .ser-text h1 {
+        font-size: 30px;
+    }
+
+    .services .ser-text p {
+        font-size: 14px;
+    }
+
+    .ser-container .ser-detail .ser-acc .ser-box p {
+        font-size: 14px;
+    }
+
+    .ser-box-txt h3 {
+        font-size: 16px;
+    }
+
+    .ser-container .ser-detail .ser-acc button {
+        font-size: 12px;
+        font-family: "Manrope", sans-serif;
+        padding: 10px 20px;
+    }
+
+    /* latest project section */
+
+    .latest-projects {
+        width: 100%;
+        padding: 20px;
+        padding-top: 40px;
+    }
+
+    .latest-projects-cards {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .latest-projects-cards .latest-pr-card {
+        width: 100%;
+    }
+
+    .latest-projects-cards .pr-2 {
+        margin-bottom: 0px;
+    }
+
+    .latest-projects-cards .pr-3 {
+        margin-bottom: 0px;
+    }
+
+    /* aboutUs section  */
+
+    .aboutUs {
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0px;
+        padding-bottom: 50px;
+        margin: 40px 0px;
+    }
+
+    .aboutUs .aboutUs-images {
+        width: 90%;
+        margin-bottom: 60px;
+    }
+
+    .aboutUs .aboutUs-images .aboutus-img2 {
+        width: 50%;
+        bottom: -100px;
+        right: -15px;
+    }
+
+    .aboutUs .aboutUs-text h1 {
+        font-size: 35px;
+        color: #fff;
+        font-family: "Urbanist", sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .aboutUs .aboutUs-text p {
+        font-size: 14px;
+    }
+
+    /* project section  */
+
+    .project {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px 0px;
+        padding: 30px;
+    }
+
+    .pr-text {
+        width: 100%;
+    }
+
+    .pr-text h1 {
+        font-size: 30px;
+        max-width: 450px;
+        line-height: 35px;
+    }
+
+    .pr-circle-sec {
+        margin-right: 120px;
+    }
+
+    .pr-circle-sec .pr-blue-sec {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pr-circle-sec .pr-stroke-sec {
+        width: 150px;
+        height: 150px;
+        right: -120px;
+    }
+
+    .pr-circle-sec .pr-stroke-sec .arrow {
+        padding: 15px;
+    }
+
+    /* footer section  */
+
+    footer {
+        padding: 20px 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    footer .fo-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .fo-left p {
+        margin-top: 20px;
+    }
+
+    footer .fo-right .social-icon {
+        gap: 20px;
+        margin-top: 20px;
+    }
+
 }
