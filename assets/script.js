@@ -18,6 +18,9 @@ if (close) {
 // swiper js 
 
 var swiper = new Swiper(".mySwiper", {
+
+    slidesPerView: "auto",
+    centeredSlides: true,
     breakpoints: {
         640: {
             slidesPerView: 1,
@@ -25,20 +28,22 @@ var swiper = new Swiper(".mySwiper", {
         },
         768: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 22,
         },
         1024: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 32,
         },
     },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: true,
+
+    keyboard: {
+        enabled: true,
     },
+
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    
 
 });
