@@ -536,7 +536,6 @@
 
 .swiper-slide {
     background-color: white;
-
     border-radius: 20px;
     height: 350px;
     display: flex !important;
@@ -556,8 +555,6 @@
 }
 
 .swiper-button-prev.swiper-button-disabled {
-    background-color: #015DB2;
-    /*opacity: 1;*/
     cursor: auto;
     pointer-events: none;
 }
@@ -565,13 +562,13 @@
 .swiper-button-prev::before {
     content: "";
     background-image: url("./icons/arrow-3.png");
-    padding: 30px;
+    padding: 20px;
     border-radius: 50%;
-    background-color: #0291F7;
+    background-color: #015DB2;
     background-repeat: no-repeat;
     background-position: center;
     rotate: 180deg;
-    background-size: 10px;
+    background-size: 8px;
     cursor: pointer;
 }
 
@@ -587,7 +584,12 @@
     cursor: pointer;
 }
 
-.swiper-button-next::before {}
+.swiper-button-next:hover::before,
+.swiper-button-prev:hover::before {
+    background-color: #0291F7;
+    padding: 30px;
+    background-size: 10px;
+}
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -1221,48 +1223,22 @@ footer .fo-right .social-icon {
 
     /* .carousel section  */
 
-    .swiper-button-next {
-
-        margin-left: 40px;
-    }
-
-    .swiper-button-prev{
-        margin-right: 40px;
-
-    }
-
-    /* .carousel .carousel-heading h1 {
+    .carousel .carousel-heading h1 {
         font-size: 30px;
         margin-bottom: 30px;
     }
 
-    .mySwiper {
-        width: 100% !important;
-        padding-bottom: 40px;
+    .swiper-button-next {
+        left: 58%;
+        top: 90%;
     }
 
-    .swiper-wrapper .swiper-extra {
-        display: none !important;
+    .swiper-button-prev {
+        left: 42%;
+        top: 90%;
     }
-
-    .swiper-slide {
-        left: 0% !important;
-        padding: 15px;
-        border-radius: 0px;
-    }
-
-    .swiper-slide.swiper-slide-active {
-        left: 0% !important;
-    }
-
-    .swiper-slide.swiper-slide-next {
-        height: 300px !important;
-        left: 0% !important;
-    } */
 
     /* .carousel section end */
-
-    /* project section  */
 
     .project {
         width: 100%;
