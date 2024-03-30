@@ -509,9 +509,10 @@
 
 .carousel {
     width: 100%;
-    padding: 70px 0px;
+    padding: 50px 0px;
     background-color: #E7E7E7;
     font-family: "Urbanist", sans-serif;
+    overflow: hidden;
 }
 
 .carousel .carousel-heading h1 {
@@ -521,34 +522,54 @@
     margin-bottom: 50px;
 }
 
+.mySwiper {
+    width: 150%;
+    padding-bottom: 100px;
+}
+
 .swiper-wrapper {
     width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .swiper-slide {
-    width: 40%;
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
+    background-color: white;
     border-radius: 20px;
+    height: 300px;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
     /* filter: drop-shadow(11px 16px 26px #062F7D); */
+    left: -17% !important;
+    padding: 60px;
+}
+
+.swiper-slide.swiper-slide-active {
+    left: -17% !important;
+}
+
+.swiper-slide.swiper-slide-next {
+    height: 400px;
+    left: -17% !important;
+}
+
+.profile-text {
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .swiper-slide .profile {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .swiper-slide .profile .profile-detail {
     display: flex;
     align-items: end;
-    justify-content: center
+    justify-content: center;
 }
 
 .swiper-slide .profile .profile-detail img {
@@ -578,6 +599,14 @@
 .swiper-slide .profile .profile-detail .swiper-slide img {
     width: 50px;
     height: 50px;
+}
+
+.swiper-slide .rating img {
+    width: 120px;
+}
+
+.swiper-slide .description {
+    text-align: justify;
 }
 
 /* carousel section end */
@@ -846,6 +875,50 @@ footer .fo-right .social-icon {
         justify-content: center;
         margin: 100px 0px;
     }
+
+    /* .carousel section  */
+
+    .carousel {
+        padding: 30px 0px;
+    }
+
+    .mySwiper {
+        width: 150%;
+        padding-bottom: 70px;
+    }
+
+    .swiper-slide {
+        padding: 30px;
+        height: 250px;
+    }
+
+    .profile-text {
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+
+    .swiper-slide .profile {
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide.swiper-slide-next {
+        height: 350px;
+        left: -17% !important;
+    }
+
+    .swiper-slide .profile .profile-detail img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .swiper-slide .profile .profile-detail .profile-text h4 {
+        font-size: 16px;
+    }
+
+    .swiper-slide .profile .profile-detail .profile-text p {
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 479px) {
@@ -1085,7 +1158,7 @@ footer .fo-right .social-icon {
     }
 
     .aboutUs .aboutUs-text h1 {
-        font-size: 35px;
+        font-size: 30px;
         color: #fff;
         font-family: "Urbanist", sans-serif;
         margin-bottom: 10px;
@@ -1094,6 +1167,41 @@ footer .fo-right .social-icon {
     .aboutUs .aboutUs-text p {
         font-size: 14px;
     }
+
+    /* .carousel section  */
+
+    .carousel .carousel-heading h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .mySwiper {
+        width: 100% !important;
+        /* padding-bottom: 100px; */
+        padding-bottom: 40px;
+    }
+
+    .swiper-wrapper .swiper-extra {
+        display: none !important;
+    }
+
+    .swiper-slide {
+        /* filter: drop-shadow(11px 16px 26px #062F7D); */
+        left: 0% !important;
+        padding: 15px;
+        border-radius: 0px;
+    }
+
+    .swiper-slide.swiper-slide-active {
+        left: 0% !important;
+    }
+
+    .swiper-slide.swiper-slide-next {
+        height: 300px !important;
+        left: 0% !important;
+    }
+
+    /* .carousel section end */
 
     /* project section  */
 
