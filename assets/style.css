@@ -589,6 +589,7 @@
     background-color: #0291F7;
     padding: 30px;
     background-size: 10px;
+    transition: all 0.2s;
 }
 
 .swiper-button-prev::after,
