@@ -73,6 +73,17 @@
     padding: 70px 0;
 }
 
+.hero .corner-gradient {
+    background: radial-gradient(circle, rgba(222, 241, 255, 1) 10%, rgba(255, 255, 255, 0) 65%);
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    top: -125px;
+    left: -160px;
+    z-index: -1;
+}
+
 .hero .hero-text>* {
     margin-bottom: 30px;
 }
@@ -239,6 +250,27 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+}
+
+.services .ser-first-gradient,
+.services .ser-sec-gradient {
+    background: radial-gradient(circle, rgba(222, 241, 255, 1) 10%, rgba(255, 255, 255, 0) 65%);
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ser-first-gradient {
+    top: -32px;
+    z-index: -1;
+    right: -135px;
+}
+
+.ser-sec-gradient {
+    bottom: -140px;
+    left: -140px;
+    z-index: -1;
 }
 
 .services .blue-Sidecircle {
@@ -582,6 +614,7 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+
 }
 
 .swiper-button-next:hover::before,
@@ -589,7 +622,7 @@
     background-color: #0291F7;
     padding: 30px;
     background-size: 10px;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
 .swiper-button-prev::after,
@@ -721,13 +754,10 @@
     border: 2px solid black;
     border-radius: 50%;
     position: relative;
-}
-
-.pr-circle-sec .pr-stroke-sec .circle-text:hover {
     animation-name: rotate;
 }
 
-.pr-circle-sec .pr-stroke-sec .arrow {
+.pr-circle-sec .pr-stroke-sec .pr-arrow {
     position: absolute;
     background-color: #015DB2;
     padding: 35px;
@@ -738,6 +768,14 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.pr-circle-sec .pr-stroke-sec .pr-arrow img {
+    transition: all 0.5s;
+}
+
+.pr-circle-sec .pr-stroke-sec .pr-arrow img:hover {
+    rotate: 45deg;
 }
 
 @keyframes rotate {
@@ -836,6 +874,11 @@ footer .fo-right .social-icon {
     }
 
     /* services section  */
+
+    .services .ser-first-gradient,
+    .services .ser-sec-gradient {
+        display: none;
+    }
 
     .ser-container .ser-detail {
         justify-content: center;
@@ -1273,7 +1316,11 @@ footer .fo-right .social-icon {
     .pr-circle-sec .pr-stroke-sec {
         width: 150px;
         height: 150px;
-        right: -120px;
+        right: -130px;
+    }
+
+    .pr-circle-sec .pr-stroke-sec .pr-arrow {
+        padding: 15px;
     }
 
     .pr-circle-sec .pr-stroke-sec .arrow {
